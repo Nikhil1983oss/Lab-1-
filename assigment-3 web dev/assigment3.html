@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Full Stack Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="logo"><span class="muted">Hi, I am</span><br/><span class="accent">NIKHIL KUMAR SHARMA</span></h1>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2 class="hero-intro">Building modern web applications with <strong>Flutter</strong> FLow.</h2>
+          <p class="lead">I create responsive and interactive web experiences. I love learning, solving problems, and shipping polished front-end & backend features.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#" download>Download CV</a>
+            <a class="btn btn-outline" href="#contact">Hire Me</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <!-- using user's uploaded file path as requested -->
+          <div class="avatar-frame" aria-hidden="true">
+            <img src="https://t3.ftcdn.net/jpg/17/64/46/60/360_F_1764466028_UbymTdgJMZ7xGJ8vlHWTxV21kEz32B3C.jpg" alt="Profile illustration" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container about">
+      <h3 class="section-title">About Me</h3>
+      <p class="about-text">
+        Hello! My name is Nikhil Kumar Sharma, and I am currently learning web development. This is my portfolio where I showcase my projects and skills. I enjoy building modern web applications, learning new frameworks, and improving my craft every day.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="container skills">
+      <h3 class="section-title">My Skills</h3>
+      <div class="skills-row">
+        <div class="skill-card">
+          <h4>HTML</h4>
+          <p class="skill-level">Beginner</p>
+        </div>
+        <div class="skill-card">
+          <h4>CSS</h4>
+          <p class="skill-level">Beginner</p>
+        </div>
+        <div class="skill-card">
+          <h4>JavaScript</h4>
+          <p class="skill-level">Learning</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container projects">
+      <h3 class="section-title">My Projects</h3>
+
+      <div class="projects-grid">
+        <article class="project">
+          <div class="project-screenshot" role="img" aria-label="Project 1 screenshot"></div>
+          <h4>Project 1</h4>
+          <p class="project-desc">A simple HTML & CSS webpage.</p>
+          <div class="project-links">
+            <a class="small-btn" href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a class="small-btn" href="#" target="_blank" rel="noopener">Source</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-screenshot" role="img" aria-label="Project 2 screenshot"></div>
+          <h4>Project 2</h4>
+          <p class="project-desc">Another mini project showing interaction and layout skills.</p>
+          <div class="project-links">
+            <a class="small-btn" href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a class="small-btn" href="#" target="_blank" rel="noopener">Source</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container contact">
+      <h3 class="section-title">Contact Me</h3>
+      <div class="contact-grid">
+        <form class="contact-form" action="#" method="post" onsubmit="return false;">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Enter your name" required />
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Write a brief message" required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Send Message</button>
+          </div>
+        </form>
+
+        <aside class="contact-info">
+          <div class="card">
+            <h4>Get in touch</h4>
+            <p>Email: <a href="mailto:hello@example.com">nikhilsharma3949@gmail.com</a></p>
+            <p>GitHub: <a href="#" target="_blank" rel="noopener">      https://github.com/Nikhil1983oss</a></p>
+            <p>LinkedIn: <a href="#" target="_blank" rel="noopener">linkedin.com/in/username</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> John Doe — Built with HTML & CSS</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.documentElement.style.scrollBehavior = 'smooth';
+  </script>
+</body>
+</html>
